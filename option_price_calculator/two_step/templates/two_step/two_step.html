@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Two Step Binomial Pricing Model</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+    <div>
+        <div><h4>Two Step Binomial Pricing Model is the most simplified way of predicting option prices in whcih only one time period is elapsed between present and future</h4></div>
+        <div class="inputs" style="display: flex; flex-direction: column; align-items: center; height: 700px; justify-content: center; background-color: bisque;">
+              <form action="eval" style="background-color: rgb(107, 176, 3); padding:40px;  border-radius: 20px; color: white;">
+                <div style="padding:6px">
+                <label for="S0">Stock Price Initially:</label>
+                <input type="text" id="S0" name="S0" ><br>
+                </div>
+                <div style="padding:6px">
+                <label for="K">Strike Price Initially:</label>
+                <input type="text" id="K" name="K"><br>
+                </div>
+                <div style="padding:6px">
+                <label for="r">Risk Free Rate:</label>
+                <input type="text" id="r" name="r"><br>
+                </div>
+                <div style="padding:6px">
+                <label for="u">Up Move Factor:</label>
+                <input type="text" id="u" name="u"><br>
+                </div>
+                <div style="padding:6px">
+                <label for="d">Down Move Factor:</label>
+                <input type="text" id="d" name="d"><br>
+                </div>
+                <div style="padding:6px">
+                <label for="T">Time to Expiry:</label>
+                <input type="text" id="T" name="T"><br>
+                </div>
+                <div style="padding:6px">
+                <input type="submit" value="Submit">
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
